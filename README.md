@@ -5,4 +5,5 @@ examples from the book.  These are the currently implemented items:
 
 Item 6:  Explicitly disallow the use of compiler-generated functions you
          do not want.
+         
 Item 7:  Declare destructors virtual in polymorphic base classes.         
