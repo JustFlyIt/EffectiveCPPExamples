@@ -3,12 +3,14 @@
 Examples are from pages 37-40 of Scott Meyers book, "Effective C++, Third Edition".
 
 Example1 -  non-virtual and virtual destructors
+
 Example2 -  Be cautious when inheriting from classes without virtual destructors.
             This includes all STL container types such as vector, list, set etc.
 
 Compile examples with:  
 
   g++ Example1 (or 2).cpp     // Compile and linker
+
   g++ -c Example1 (or 2).cpp  // Compile only
 
 KEY POINTS:
