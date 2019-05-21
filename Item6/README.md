@@ -1,6 +1,6 @@
-# Item6:  Explicity disallow the use of compiler-generated functions you do not want.
+# Item 6:  Declare destructors virtual in polymorphic base classes.
 
-Example is from pages 37-40 of Scott Meyers book, "Effective C++, Third Edition".
+Example is from pages 40-44 of Scott Meyers book, "Effective C++, Third Edition".
 
 Compile example with:  
 
