@@ -1,4 +1,4 @@
-# Item 7:  Explicity disallow the use of compiler-generated functions you do not want.
+# Item 7:  Explicitly disallow the use of compiler-generated functions you do not want.
 
 Examples are from pages 37-40 of Scott Meyers book, "Effective C++, Third Edition".
 
