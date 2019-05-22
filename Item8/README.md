@@ -9,8 +9,6 @@ Example2 -  Solution 1 - Controlled termination
 
 Example3 -  Solution 2 - Swallow the exceptions
 
-Example4 -  Solution 3 - Empower the client
-
 Compile examples with:  
 
   g++ Example1 (or 2, 3).cpp     // Compile and linker
