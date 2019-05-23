@@ -81,6 +81,8 @@ class DBConnUser {
 int main() {
   std::cout << "Starting Item 8 Example 3 - Swallow the exception..." << std::endl << std::endl;
 
+  std::unique_ptr<DBConnection>DBConnection::getConnection();
+
   std::cout << std::endl << "Creating dbConnUser..." << std::endl;
   DBConnUser* dbConnUser = new DBConnUser();
 
