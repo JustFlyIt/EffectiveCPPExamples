@@ -69,6 +69,9 @@ class DBConnUser {
         // Log the exception, take the appropriate actions to move on and
         // then continue execution.
         std::cout << "Exception thrown by db->close() - handle the issue and attempt to move on." << std::endl;
+
+        // Has the advantage of providing opportunity to address the
+        // exception, then continue processing.
       }
 
       std::cout << "~DBConnUser destructor ending." << std::endl;
@@ -93,7 +96,7 @@ int main() {
   // DB CONNECTION THREW AN EXCEPTION AND EXECUTION IS ABORTED; THIS
   // IS TO PREVENT UNDEFINED BEHAVIOR...IT IS KNOWN EXACTLY WHERE THE ABORT
   // OCCURRED ALONG WITH WHAT HAS AND HAS NOT BEEN RELEASE/FINISHED.
-  
+
   std::cout << std::endl << "Item 8 Example 3 Ending..." << std::endl;
 
   return 0;
