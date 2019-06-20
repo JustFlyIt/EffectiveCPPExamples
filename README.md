@@ -1,11 +1,17 @@
-# Code Examples From Scott Meyers' book, "Effective C++, Third Edition".
+# Item 9:  Never call virtual functions during construction or destruction.
 
-The contents of this repository contain code implementations of the various
-examples from the book.  These are the currently implemented items:
+Examples are from pages 48-52 of Scott Meyers book, "Effective C++, Third Edition".
 
-Item 6:  Explicitly disallow the use of compiler-generated functions you
-         do not want.
+Example1 -  non-virtual and virtual destructors
 
-Item 7:  Declare destructors virtual in polymorphic base classes.
+Example2 -  Be cautious when inheriting from classes without virtual destructors.
+            This includes all STL container types such as vector, list, set etc.
 
-Item 8:  Prevent exceptions from leaving destructors.        
+Compile examples with:  
+
+  g++ Example1 (or 2).cpp     // Compile and linker
+
+KEY POINTS:
+*   Don't call virtual functions during construction or destruction; such calls
+    will never go to a more derived class than that or the currently executing
+    constructor or destructor.
