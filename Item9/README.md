@@ -1,17 +1,15 @@
-# Item :  In Progress
+Item 9: Never call virtual functions during construction or destruction.
 
-Examples are from pages 44-48 of Scott Meyers book, "Effective C++, Third Edition".
+Examples are from pages 48-52 of Scott Meyers book, "Effective C++, Third Edition".
 
-Example1 -  
-Example2 -  Solution 1
+Example1 
 
-Example3 -  Solution 2
+IN PROGRESS
 
-Compile examples with:  
+Compile examples with:
 
-  g++ Example1 (or 2, 3).cpp     // Compile and linker
-
-  g++ -c Example1 (or 2, 3).cpp  // Compile only
+g++ Example1 (or 2).cpp // Compile and linker
 
 KEY POINTS:
-*   
+
+    Don't call virtual functions during construction or destruction; such calls will never go to a more derived class than that or the currently executing constructor or destructor.
